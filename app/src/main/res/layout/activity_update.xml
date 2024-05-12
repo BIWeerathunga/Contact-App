@@ -18,7 +18,7 @@
         android:layout_marginTop="16dp"
 
         android:padding="10dp"
-        android:text="Edit Number"
+        android:text="Edit Contact"
         android:textColor="@color/Blue"
         android:textSize="24sp" />
 
