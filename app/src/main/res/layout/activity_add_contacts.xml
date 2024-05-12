@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddContactsActivity"
+    android:background="@color/dark_blue">
+
+
+    <TextView
+        android:id="@+id/addNoteHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+
+        android:padding="10dp"
+        android:text="Add Contact"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/Blue"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/addNoteHead"
+        app:tint="@color/Blue"
+        android:layout_marginEnd="6dp"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/titleEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/addNoteHead"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_borders"
+
+        android:hint="Enter the Number"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/contentEditTxt"
+        android:layout_width="390dp"
+        android:layout_height="86dp"
+        android:layout_below="@id/titleEditTxt"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/blue_borders"
+        android:gravity="top"
+
+        android:hint="Enter the Name"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
